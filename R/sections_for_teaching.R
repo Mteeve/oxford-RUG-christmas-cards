@@ -38,9 +38,26 @@ s3 <- s2 +
 s3
 
 # add snowman
+s4 <- s3 +
+  geom_circle(data = data.frame(
+    x0 = c(0.6, 0.6),
+    y0 = c(0.3, 0.5),
+    r = c(0.15, 0.1)
+  ),
+  mapping = aes(x0 = x0, y0 = y0, r = r),
+  colour = "white",
+  fill = "white")
+s4
 
 # add eyes and buttons
-
+s4 +
+  geom_point(
+    data = data.frame(
+      x = c(0.6, 0.6, 0.6),
+      y = c(0.25, 0.3, 0.35)
+    ),
+    mapping = aes(x = x, y = y)
+  )
 # add sticks for arms
 
 # add hat
