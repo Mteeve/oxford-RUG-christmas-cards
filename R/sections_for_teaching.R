@@ -14,8 +14,8 @@ s2 <- s1 +
     xmax = 1,
     ymin = 0,
     ymax = 0.2,
-    fill = 'grey98',
-    colour = 'grey98'
+    fill = 'grey68',
+    colour = 'grey68'
   ) +
   xlim(0, 1) +
   ylim(0, 1) +
@@ -106,5 +106,5 @@ s8 <- s7 +
 s8
 
 # add text
-s8 +
+# s8 +
   
