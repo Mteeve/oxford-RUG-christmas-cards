@@ -96,5 +96,15 @@ s7 <- s6 +
 
 s7
 # add nose
+s8 <- s7 +
+  annotate(
+    geom = "polygon",
+    x = c(0.6, 0.6, 0.65),
+    y = c(0.52, 0.48, 0.50),
+    fill = "darkorange"
+  )
+s8
 
 # add text
+s8 +
+  
