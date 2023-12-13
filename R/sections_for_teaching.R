@@ -106,5 +106,21 @@ s8 <- s7 +
 s8
 
 # add text
-# s8 +
-  
+s8 +
+  annotate('text',
+           x = 0.5,
+           y = .9,
+           label = 'Merry Christmas',
+           colour = 'red',
+           fontface = 'bold',
+           size = 9) +
+  annotate(geom = 'text',
+           x = 0.5,
+           y = 0.07,
+           label = 'To Michele\nfrom Kasia',
+           colour = 'red',
+           fontface = 'bold',
+           # family = 'Comic Sans',
+           size = 9
+           )
+
