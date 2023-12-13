@@ -50,18 +50,51 @@ s4 <- s3 +
 s4
 
 # add eyes and buttons
-s4 +
+s5 <- s4 +
   geom_point(
     data = data.frame(
-      x = c(0.6, 0.6, 0.6),
-      y = c(0.25, 0.3, 0.35)
+      x = c(0.6, 0.6, 0.6, .57, 0.62),
+      y = c(0.25, 0.3, 0.35, .52, 0.53)
     ),
-    mapping = aes(x = x, y = y)
+    mapping = aes(x = x, y = y),
+    colour = 'black',
+    size = 2
   )
+
+s5
+
 # add sticks for arms
 
+s6 <- s5 +
+  annotate('segment',
+           x = 0.7, xend = 0.85,
+           y = 0.3, yend = 0.4,
+           colour = 'chocolate4',
+           linewidth = 2) +
+  annotate('segment',
+           x = 0.5, xend = 0.35,
+           y = 0.3, yend = 0.4,
+           colour = 'chocolate4',
+           linewidth = 2)
+
+s6
 # add hat
 
+s7 <- s6 +
+  annotate('rect',
+           xmin = 0.46,
+           xmax = 0.74,
+           ymin = 0.55,
+           ymax = 0.6,
+           fill = 'brown')  +
+  annotate('rect',
+           xmin = 0.50,
+           xmax = 0.70,
+           ymin = 0.60,
+           ymax = 0.66,
+           fill = 'brown')
+
+s7
 # add nose
 
 # add text
