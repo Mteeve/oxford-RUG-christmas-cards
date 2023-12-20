@@ -101,7 +101,7 @@ s8 <- s7 +
     geom = "polygon",
     x = c(0.6, 0.6, 0.65),
     y = c(0.52, 0.48, 0.50),
-    fill = "darkorange"
+    fill = "GreenYellow"
   )
 s8
 
@@ -110,17 +110,17 @@ s8 +
   annotate('text',
            x = 0.5,
            y = .9,
-           label = 'Merry Christmas',
+           label = 'Merry X-Mass',
            colour = 'red',
            fontface = 'bold',
            size = 9) +
   annotate(geom = 'text',
            x = 0.5,
            y = 0.07,
-           label = 'To Michele\nfrom Kasia',
+           label = 'To You-all\nfrom Mteeve',
            colour = 'red',
            fontface = 'bold',
            # family = 'Comic Sans',
-           size = 9
+           size = 8.8
            )
 

@@ -122,8 +122,8 @@ plot(nose)
 s8 <- s7 +
   geom_sf(
     data = nose,
-    fill = "orange",
-    colour = "orange"
+    fill = "green",
+    colour = "green"
   ) +
   coord_sf(expand = FALSE)
 s8
@@ -132,17 +132,17 @@ s8
 s9 <- s8 +
   annotate(
     geom = "text",
-    x = 0.5,
-    y = 0.95,
-    label = "Merry Christmas",
+    x = 0.6,
+    y = 0.98,
+    label = "Merry X-Mass",
     colour = "red3",
     fontface = "bold",
-    size = 9
+    size = 10
   ) +
   annotate(
     geom = "text",
-    x = 0.5,
-    y = 0.07,
+    x = 0.6,
+    y = 0.08,
     label = "To ...\n From ...",
     colour = "red3",
     fontface = "bold",
